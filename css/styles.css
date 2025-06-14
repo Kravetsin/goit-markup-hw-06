@@ -188,10 +188,12 @@ a {
   align-items: flex-start;
   z-index: 999;
   background-color: #ffffff;
-  left: 0;
-  top: 0;
-  padding: 72px 16px 40px 16px;
+  left: 50%;
   width: 100%;
+  max-width: 320px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  padding: 72px 16px 40px 16px;
   height: 100vh;
 }
 
