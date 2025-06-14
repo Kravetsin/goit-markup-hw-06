@@ -26,9 +26,11 @@
           <a class="link logo" href="./index.html"
             >Web<span class="span-logo">Studio</span></a
           >
-          <button class="button btn-menu" type="button"><svg class="icon icon-menu">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg></button>
+          <button class="button btn-menu" type="button">
+            <svg class="icon icon-menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
 
         <div class="box-nav">
@@ -473,9 +475,13 @@
     <footer class="footer section">
       <div class="container">
         <div class="box-footer-logo">
-          <a class="link logo" href="">Web<span class="span-logo">Studio</span></a>
-          <p class="text page-text">Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.</p>
+          <a class="link logo" href=""
+            >Web<span class="span-logo">Studio</span></a
+          >
+          <p class="text page-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
         </div>
 
         <div class="box-footer-social">
@@ -520,15 +526,128 @@
           <p class="text page-text">Subscribe</p>
 
           <form class="form form-subscribe">
-            <label class="label label-subscribe" for="email"><input class="input input-subscribe" type="email" name="enter-email" placeholder="E-mail" id="email"></label>
+            <label class="label label-subscribe" for="email"
+              ><input
+                class="input input-subscribe"
+                type="email"
+                name="enter-email"
+                placeholder="E-mail"
+                id="email"
+            /></label>
 
-            <button class="button btn-subscribe" type="submit">Subscribe<svg class="icon icon-subscribe">
-              <use href="./images/icons.svg#icon-send"></use>
-            </svg></button>
+            <button class="button btn-subscribe" type="submit">
+              Subscribe<svg class="icon icon-subscribe">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+
+    <!-- !MODAL WINDOW -->
+    <div class="box-modal-bg">
+      <div class="box-modal-window">
+        <div class="box-btn-close">
+          <button class="button btn-close btn-modal" type="button">
+            <svg class="icon icon-close">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <form class="form form-modal">
+          <fieldset class="fieldset fieldset-modal">
+            <legend class="legend-modal">
+              Leave your contacts and we will call you back
+            </legend>
+
+            <div class="box-label-modal">
+              <label class="label label-modal" for="user-name">Name</label>
+              <div class="box-input-modal">
+                <input
+                  class="input input-modal"
+                  type="text"
+                  id="user-name"
+                  name="user-name"
+                  autofocus
+                />
+                <svg class="icon icon-placeholder">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="box-label-modal">
+              <label class="label label-modal" for="user-phone">Phone</label>
+              <div class="box-input-modal">
+                <input
+                  class="input input-modal"
+                  type="tel"
+                  id="user-phone"
+                  name="user-phone"
+                />
+                <svg class="icon icon-placeholder">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="box-label-modal">
+              <label class="label label-modal" for="user-email">Email</label>
+              <div class="box-input-modal">
+                <input
+                  class="input input-modal"
+                  type="email"
+                  id="user-email"
+                  name="user-email"
+                />
+                <svg class="icon icon-placeholder">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="box-label-modal box-comment-modal">
+              <label class="label label-modal" for="user-comment"
+                >Comment</label
+              >
+              <div class="box-input-modal">
+                <textarea
+                  class="input textarea-modal"
+                  type="text"
+                  id="user-comment"
+                  name="user-comment"
+                  placeholder="Text input"
+                ></textarea>
+              </div>
+            </div>
+
+            <div class="box-label-modal box-accept-privacy">
+              <input
+                class="input input-checkbox-modal visually-hidden"
+                type="checkbox"
+                id="user-privacy"
+                value="true"
+                name="user-privacy"
+              />
+
+              <label class="label label-modal accept-privacy" for="user-privacy"
+                ><span class="span-icon-checkbox"
+                  ><svg class="icon icon-checkbox">
+                    <use
+                      href="./images/icons.svg#icon-accept"
+                    ></use></svg></span
+                >I accept the terms and conditions of the
+                <a class="link-modal-privacy" href="#">Privacy Policy</a></label
+              >
+            </div>
+
+            <button class="button btn-send" type="submit">Send</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
 
     <script src="./scripts/script.js"></script>
   </body>
