@@ -22,16 +22,23 @@
   <body>
     <header class="header">
       <div class="container">
-        <a class="link logo" href="./index.html"
-          >Web<span class="span-logo">Studio</span></a
-        >
+        <div class="box-header-logo">
+          <a class="link logo" href="./index.html"
+            >Web<span class="span-logo">Studio</span></a
+          >
+          <button class="button btn-menu" type="button"><svg class="icon icon-menu">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg></button>
+        </div>
 
         <div class="box-nav">
-          <button class="button btn-close" type="button">
-            <svg class="icon icon-close">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
+          <div class="box-btn-close">
+            <button class="button btn-close" type="button">
+              <svg class="icon icon-close">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
 
           <nav class="nav">
             <ul class="list list-nav">
@@ -522,5 +529,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
