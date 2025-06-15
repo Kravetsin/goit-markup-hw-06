@@ -167,9 +167,14 @@ a {
   line-height: 1.2;
 }
 
+.address {
+  display: flex;
+  align-items: flex-end;
+}
+
 .list-contacts {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 24px;
   margin-bottom: 48px;
 }
@@ -346,6 +351,7 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #f4f4fd;
+  width: 100%;
   height: 112px;
   margin-bottom: 8px;
   border-radius: 4px;
@@ -528,7 +534,7 @@ a {
 }
 
 .box-form-subscribe {
-  width: 100%;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -618,6 +624,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 16px;
 }
 
 .input-modal {
@@ -731,15 +738,265 @@ a {
   fill: #f4f4fd;
 }
 
+.box-footer-social .page-text{
+  color: #ffffff;
+}
+
 /* !TABLET */
 @media (min-width: 768px) {
+  /* *NAV SECTION */
   .container {
     max-width: 768px;
     padding: 0 16px;
-    margin: 0 auto;
   }
+
   .hero {
-    max-width: 100%;
+    max-width: 768px;
     height: 436px;
+  }
+
+  .header > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .box-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .box-btn-close {
+    display: none;
+  }
+
+  .header .list-social {
+    display: none;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .link-nav {
+    font-weight: 500;
+    font-size: 16px;
+    padding: 24px 0;
+  }
+
+  .list-nav {
+    flex-direction: row;
+    margin: 0;
+    margin-right: 121px;
+  }
+
+  .list-contacts {
+    margin: 0;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .link-contacts {
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .address {
+    align-items: center;
+  }
+
+  /* *HERO SECTION */
+  .title-hero {
+    max-width: 496px;
+    font-size: 56px;
+  }
+
+  /* *BENEFITS SECTION */
+  .list-benefits {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+
+  .item-feature {
+    max-width: 356px;
+    align-items: flex-start;
+  }
+
+  /* *OUR TEAM SECTION */
+  .list-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  /* *OUR PORFOLIO SECTION */
+  .list-portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  /* *FOOTER SECTION */
+  .box-footer-logo {
+    max-width: 264px;
+    align-items: flex-start;
+  }
+
+  .footer .logo {
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 72px 24px;
+    max-width: 496px;
+    padding: 0;
+  }
+
+  .box-footer-social {
+    align-items: flex-start;
+  }
+
+  .box-form-subscribe {
+    align-items: flex-start;
+  }
+
+  .form-subscribe {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .input-subscribe {
+    width: 264px;
+  }
+
+  /* *MODAL WINDOW SECTION */
+  .box-modal-window {
+    width: 408px;
+  }
+  .box-modal-window .box-btn-close {
+    display: flex;
+  }
+
+  .form-modal {
+    display: flex;
+    justify-content: center;
+  }
+
+  .input-modal {
+    width: 100%;
+  }
+
+  .fieldset {
+    width: 360px;
+  }
+
+  .box-label-modal {
+    margin-bottom: 24px;
+  }
+}
+
+/* !DESCTOP */
+@media (min-width: 1158px) {
+  /* *NAV SECTION */
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section{
+    padding: 120px 0;
+  }
+
+  .header > .container {
+    justify-content: flex-start;
+  }
+
+  .box-nav {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .link-contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .header .logo {
+    margin-right: 76px;
+  }
+
+  .list-contacts {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  /* *HERO SECTION */
+  .hero {
+    max-width: 1440px;
+    height: 600px;
+  }
+
+  .title-hero {
+    margin-bottom: 48px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+  }
+
+  /* *BENEFITS SECTION */
+  .box-icon-feature {
+    display: flex;
+  }
+
+  .item-feature {
+    max-width: 264px;
+  }
+
+  .section-benefits .title-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .section-benefits .text-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* *OUR PORTFOLIO SECTION */
+  .list-portfolio {
+    gap: 48px 24px;
+  }
+
+  /* *FOOTER SECTION */
+  .footer > .container{
+    max-width: 100%;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .box-footer-logo{
+    margin-right: 120px;
+  }
+
+  .box-footer-social{
+    margin-right: 80px;
   }
 }
