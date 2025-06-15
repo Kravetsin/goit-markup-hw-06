@@ -145,7 +145,7 @@ a {
   position: fixed;
   bottom: 24px;
   right: 24px;
-  background-color: #31d0aa;
+  background-color: #4d5ae550;
   border-radius: 50%;
   border: 1px solid white;
 }
@@ -155,6 +155,7 @@ a {
   height: 40px;
   opacity: 1;
   text-align: center;
+  color: rgba(255, 255, 255, 0.658);
 }
 
 /* !LOGO */
