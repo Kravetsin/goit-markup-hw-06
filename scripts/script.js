@@ -23,3 +23,5 @@ orderButton.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modalWindow.classList.remove("is-open");
 });
+
+// alert("Всi кнопки функцiональнi");
