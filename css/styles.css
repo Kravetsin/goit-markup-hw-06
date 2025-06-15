@@ -1,5 +1,5 @@
 /* !BASE STYLES */
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -141,7 +141,7 @@ a {
   border-color: #4d5ae5;
 }
 
-.box-go-up{
+.box-go-up {
   position: fixed;
   bottom: 24px;
   right: 24px;
@@ -150,7 +150,7 @@ a {
   border: 1px solid white;
 }
 
-.go-up{
+.go-up {
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -277,6 +277,11 @@ a {
   padding: 0;
 }
 
+.btn-menu:hover .icon-menu,
+.btn-menu:focus .icon-menu {
+  fill: #f4f4fd;
+}
+
 .box-header-logo {
   display: flex;
   justify-content: space-between;
@@ -305,6 +310,10 @@ a {
 .btn-close:focus {
   border: none;
   background-color: #404bbf;
+}
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
   fill: #ffffff;
 }
 
@@ -549,7 +558,8 @@ a {
   gap: 16px;
 }
 
-.footer .link-social:hover {
+.footer .link-social:hover,
+.footer .link-social:focus {
   background-color: #31d0aa;
 }
 
@@ -771,6 +781,12 @@ a {
   }
 
   .hero {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
     max-width: 768px;
     height: 436px;
   }
@@ -823,7 +839,6 @@ a {
     position: absolute;
     transition: 0.4s;
     background-color: #404bbf;
-
   }
 
   .list-nav {
