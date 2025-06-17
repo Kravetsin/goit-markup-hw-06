@@ -12,7 +12,6 @@ body {
 .no-scroll {
   overflow: hidden;
   height: 100dvh;
-  padding-top: env(safe-area-inset-top);
 }
 
 h1,
@@ -239,7 +238,7 @@ a {
   transform: translate(-50%, -50%);
   top: 50%;
   padding: 72px 16px 40px 16px;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .box-nav {
@@ -251,6 +250,7 @@ a {
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-top: env(safe-area-inset-top, 24px);
 }
 
 .nav .item-nav {
