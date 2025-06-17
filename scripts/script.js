@@ -3,17 +3,20 @@ const menu = document.querySelector(".btn-menu");
 const closeMenu = document.querySelector(".btn-close");
 const nav = document.querySelector(".box-nav");
 const goUpBtn = document.querySelector(".go-up");
+const header = document.querySelector(".header")
 
 menu.addEventListener("click", () => {
   nav.classList.add("is-open");
   document.body.classList.add("no-scroll");
   goUpBtn.style.display = "none";
+  header.classList.add("no-shadow");
 });
 
 closeMenu.addEventListener("click", () => {
   nav.classList.remove("is-open");
   document.body.classList.remove("no-scroll");
   goUpBtn.style.display = "block";
+  header.classList.remove("no-shadow");
 });
 
 // !MODAL WINDOW
@@ -28,6 +31,9 @@ orderButton.addEventListener("click", () => {
 closeModal.addEventListener("click", () => {
   modalWindow.classList.remove("is-open");
 });
+
+// !HEADER BOX-SHADOW HIDIND
+
 
 // !Info alert
 alert("Кнопки <Order service> i <Menu> функцiональнi");
