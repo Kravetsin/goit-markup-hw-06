@@ -2,15 +2,18 @@
 const menu = document.querySelector(".btn-menu");
 const closeMenu = document.querySelector(".btn-close");
 const nav = document.querySelector(".box-nav");
+const goUpBtn = document.querySelector(".go-up");
 
 menu.addEventListener("click", () => {
   nav.classList.add("is-open");
   document.body.classList.add("no-scroll");
+  goUpBtn.style.display = "none";
 });
 
 closeMenu.addEventListener("click", () => {
   nav.classList.remove("is-open");
   document.body.classList.remove("no-scroll");
+  goUpBtn.style.display = "block";
 });
 
 // !MODAL WINDOW

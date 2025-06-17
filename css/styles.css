@@ -156,6 +156,7 @@ a {
 }
 
 .go-up {
+  display: none;
   width: 40px;
   height: 40px;
   opacity: 1;
@@ -233,8 +234,7 @@ a {
   z-index: 999;
   background-color: #ffffff;
   left: 50%;
-  width: 100%;
-  max-width: 320px;
+  width: 320px;
   transform: translate(-50%, -50%);
   top: 50%;
   padding: 72px 16px 40px 16px;
@@ -805,6 +805,9 @@ a {
 
 /* !TABLET */
 @media (min-width: 768px) {
+  .go-up{
+    display: block;
+  }
   /* *NAV SECTION */
   .container {
     max-width: 768px;
