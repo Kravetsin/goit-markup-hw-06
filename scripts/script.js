@@ -5,10 +5,12 @@ const nav = document.querySelector(".box-nav");
 
 menu.addEventListener("click", () => {
   nav.classList.add("is-open");
+  document.body.classList.add("no-scroll");
 });
 
 closeMenu.addEventListener("click", () => {
   nav.classList.remove("is-open");
+  document.body.classList.remove("no-scroll");
 });
 
 // !MODAL WINDOW

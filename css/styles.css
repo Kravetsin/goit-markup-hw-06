@@ -9,6 +9,11 @@ body {
   background-color: #ffffff;
 }
 
+.no-scroll{
+  overflow: hidden;
+  height: 100vh;
+}
+
 h1,
 h2,
 h3,
