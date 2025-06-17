@@ -26,4 +26,5 @@ closeModal.addEventListener("click", () => {
   modalWindow.classList.remove("is-open");
 });
 
-// alert("Всi кнопки функцiональнi");
+// !Info alert
+alert("Кнопки <Order service> i <Menu> функцiональнi");

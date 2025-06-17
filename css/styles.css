@@ -9,7 +9,7 @@ body {
   background-color: #ffffff;
 }
 
-.no-scroll{
+.no-scroll {
   overflow: hidden;
   height: 100vh;
 }
@@ -174,6 +174,19 @@ a {
   text-transform: uppercase;
   color: #4d5ae5;
   padding: 16px 0;
+  animation: logo-anim 5.4s ease-in-out infinite;
+}
+
+@keyframes logo-anim {
+  0% {
+    color: #31d0aa;
+  }
+  50% {
+    color: #4d5ae5;
+  }
+  100% {
+    color: #31d0aa;
+  }
 }
 
 .header .span-logo {
