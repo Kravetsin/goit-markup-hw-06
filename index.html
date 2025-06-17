@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
+    <!-- !NORMALIZE -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,12 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- !FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!-- ! -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -241,7 +244,11 @@
             </li>
 
             <li class="item item-card">
-              <img src="./images/tom-ford.jpg" alt="Frontend Developer" />
+              <img
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                src="./images/tom-ford.jpg"
+                alt="Frontend Developer"
+              />
 
               <div class="box-card-info">
                 <h3 class="title title-item">Tom Ford</h3>
@@ -284,7 +291,14 @@
             </li>
 
             <li class="item item-card">
-              <img src="./images/camila-garcia.jpg" alt="Marketing" />
+              <img
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
+                src="./images/camila-garcia.jpg"
+                alt="Marketing"
+              />
 
               <div class="box-card-info">
                 <h3 class="title title-item">Camila Garcia</h3>
@@ -327,7 +341,14 @@
             </li>
 
             <li class="item item-card">
-              <img src="./images/daniel-wilson.jpg" alt="UI Designer" />
+              <img
+                srcset="
+                  ./images/daniel-wilson.jpg    1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
+                src="./images/daniel-wilson.jpg"
+                alt="UI Designer"
+              />
 
               <div class="box-card-info">
                 <h3 class="title title-item">Daniel Wilson</h3>
@@ -380,7 +401,14 @@
           <ul class="list list-portfolio">
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img src="./images/banking-app.jpg" alt="Banking App" />
+                <img
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app@2x.jpg 2x
+                  "
+                  src="./images/banking-app.jpg"
+                  alt="Banking App"
+                />
                 <p class="text page-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -395,7 +423,7 @@
 
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img
+                <img srcset="./images/cashless-payment.jpg 1x, ./images/cashless-payment@2x.jpg 2x"
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment"
                 />
@@ -413,7 +441,7 @@
 
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img src="./images/meditation-app.jpg" alt="Meditation App" />
+                <img srcset="./images/meditation-app.jpg 1x, ./images/meditation-app@2x.jpg 2x" src="./images/meditation-app.jpg" alt="Meditation App" />
                 <p class="text page-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -428,7 +456,7 @@
 
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service" />
+                <img srcset="./images/taxi-service.jpg 1x, ./images/taxi-service@2x.jpg 2x" src="./images/taxi-service.jpg" alt="Taxi Service" />
                 <p class="text page-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -443,7 +471,7 @@
 
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img
+                <img srcset="./images/screen-illustrations.jpg 1x, ./images/screen-illustrations@2x.jpg 2x"
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                 />
@@ -461,7 +489,7 @@
 
             <li class="item item-portfolio">
               <div class="box-text-portfolio-hover">
-                <img src="./images/online-courses.jpg" alt="Online Courses" />
+                <img srcset="./images/online-courses.jpg 1x, ./images/online-courses@2x.jpg 2x" src="./images/online-courses.jpg" alt="Online Courses" />
                 <p class="text page-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
